@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Alarm Clock</title>
+</head>
+<link rel="stylesheet" type="text/css" href="css/main.css">
+<body>
+	<div id="wrapper">
+
+		<div class="outter">
+			<div class="inner">
+				<h1 id="time" onclick="time();" >12:00:00 AM</h1>
+				<p>Sharp</p>
+			</div>
+		</div>
+		<div class="alarmDetail">
+			<input type="number" min="1" max="12" id="hour" value="12">:<input type="number" min="0" max="59" id="minute" value="00">:<input type="number" min="0" max="59" id="second" value="00">
+			<select id="amPm">
+				<option selected value="AM">AM</option>
+				<option value="PM">PM</option>
+			</select>
+			<button onclick="setAlarm(document.getElementById('hour').value,document.getElementById('minute').value,document.getElementById('second').value,document.getElementById('amPm').value)">Set alarm</button>
+			<h2>Ring alarm at:</h2>
+			<h1 id="alarm">--:--:-- AM</h1>
+			<p>PS: You can set the alarm in 24h or 12h format.</p>
+		</div>
+	</div>
+</body>
+</html>
+<script type="text/javascript" src="js/main.js"></script>
