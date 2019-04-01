@@ -1,0 +1,56 @@
+@font-face{
+	font-family: 'alarm clock';
+	src: url('../font/alarmclock.ttf');
+}
+*{
+	font-family: 'alarm clock';
+	padding: 0;
+	margin: 0;
+}
+#time{
+	font-size: 500%;
+	color: #FE0101;
+	padding-bottom: 120px;
+	padding-top: 70px;
+	padding-right: 5px;
+	padding-left: 5px;
+}
+.outter{
+	width: 600px;
+	height: 400px;
+	background-color: #BFBEBE;
+	border-radius: 10px 10px 2px 2px; 
+}
+.inner{
+	padding: 10% 0;
+	background-color: #0B0B0B;
+	width: 80%;
+	height: 60%;
+	margin: 10%;
+}
+#wrapper{
+	width: 800px;
+	margin: 0 auto;
+}
+button,h2,p{
+	font-family: georgia;
+}
+input,button,select{
+	font-size: 150%;
+}
+.alarmDetail{
+	font-size: 190%;
+
+}
+.glow{
+	color: red;
+	animation: 1s glowing infinite;
+}
+@keyframes glowing{
+	from{
+		opacity: 0.2;
+	}
+	to{
+		opacity: 1;
+	}
+}
